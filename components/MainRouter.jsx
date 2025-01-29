@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './Home/Home'
 import About from '../src/pages/About/About'
 import Contact from '../src/pages/Contact/Contact'
-import Education from '../src/pages/Education/Education'
+import Services from '../src/pages/Servicesp/Services'
 import Projects from '../src/pages/Projects/Projects'
 import Layout from '../components/Layoutp/Layout'
 
@@ -16,7 +16,7 @@ const MainRouter = () => {
 
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About></About>} />
-            <Route exact path="/education" element={<Education></Education>} />
+            <Route exact path="/services" element={<Services></Services>} />
             <Route exact path="/projects" element={<Projects></Projects>} />
             <Route exact path="/contact" element={<Contact></Contact>} />
 
