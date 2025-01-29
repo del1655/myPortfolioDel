@@ -68,3 +68,30 @@
 .menombre {
   font-weight: bold;
 }
+
+.btn {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+  text-decoration: none; /* Esto elimina el subrayado predeterminado de los enlaces */
+  display: inline-flex; /* Cambiar a flex para alinear el contenido */
+  align-items: center; /* Centra verticalmente el texto y la imagen */
+}
+
+.download-icon {
+  width: 20px; /* Ajusta el tamaño de la imagen */
+  height: 20px;
+  margin-left: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.btn:hover {
+  background-color: #03408f;
+}

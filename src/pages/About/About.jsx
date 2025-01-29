@@ -1,6 +1,12 @@
+// Delannie Joseline Teodoro Bocanegra
+// StudentNumber : 301486294
+// Date : 29/01/2025
+ 
 import React from 'react';
 import './About.css';
 import aboutImage from '../../assets/images/profilePic.png';
+import logoPDF from '../../assets/images/pdfLogo.png'
+import resumePDF from '../../CurrículumDelannieV.pdf'; // Asegúrate de que la ruta sea correcta
 
 export default function About() {
   return (
@@ -9,7 +15,7 @@ export default function About() {
 
         <header className="about-header">
           <h1>About Me</h1>
-          <p className='menombre'>Delannie Joseline Teodoro Bocanegra</p>              
+          <p className='menombre'>Delannie Joseline Teodoro Bocanegra</p>
 
           <p>As a passionate technologist, I am driven by the art of creating digital experiences that captivate and inspire.</p>
           <p>From conceptualizing innovative solutions to designing intuitive user interfaces, I thrive in the intersection of functionality and creativity.</p>
@@ -18,6 +24,13 @@ export default function About() {
         <section className="about-content">
           <div className="about-image">
             <img src={aboutImage} alt="About Me" />
+            <div className="about-item">
+              <a href={resumePDF} download className="btn">
+                Download Resume
+                <img src={logoPDF} alt="Download Icon" className="download-icon" />
+              </a>
+            </div>
+
           </div>
           <div className="about-text">
             <div className="about-item">
@@ -42,9 +55,10 @@ export default function About() {
                 My vision is to continuously evolve as a creative professional, contributing to the digital world with innovative, impactful solutions that elevate the user experience and inspire creativity in others.
               </p>
             </div>
-          </div>
 
-          
+
+
+          </div>
         </section>
       </div>
     </div>
