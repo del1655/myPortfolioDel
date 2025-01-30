@@ -1,120 +1,111 @@
-/* Services.css */
-
+/* Services.css
+Delannie Joseline Teodoro Bocanegra
+Student Number: 301486294
+Date: 29/01/2025 */
 .services-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem;
-  background-color: #f9f9f9;
-  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-family: 'Poppins', sans-serif; 
 
 }
 
 .services-content {
-  max-width: 1200px;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
   padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .services-section {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .services-header h1 {
   font-size: 2.5rem;
+  font-weight: 600;
   color: #004aad;
+}
+
+.services-header {
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.services-section h2 {
-  font-size: 1.8rem;
-  color: #444;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .services-section p {
-  font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #4a5568;
+  margin-top: 1rem;
 }
 
 .service-item {
   display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: #cee6ff;
+  padding: 2rem;
+  background-color: #ffffff;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.service-image-container {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .service-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 8px;
-  margin-right: 1.5rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .service-info {
-  flex: 1;
-  text-align: left;
+  flex-grow: 1;
 }
 
 .service-info h3 {
   font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2d3748;
 }
 
 .service-info p {
   font-size: 1rem;
-  color: #666;
+  color: #718096;
   line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .services-content {
-    padding: 1.5rem;
-  }
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
 
+@media (max-width: 768px) {
   .service-item {
     flex-direction: column;
     text-align: center;
   }
 
-  .service-image {
-    margin-right: 0;
+  .service-image-container {
+    width: 100px;
+    height: 100px;
     margin-bottom: 1rem;
   }
 
-  .service-info {
-    text-align: center;
+  .service-info h3 {
+    font-size: 1.25rem;
   }
 
-  .services-header h1 {
-    font-size: 2rem;
-  }
-
-  .services-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .services-section p, .service-info p {
-    font-size: 1rem;
+  .service-info p {
+    font-size: 0.875rem;
   }
 }

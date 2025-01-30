@@ -1,3 +1,7 @@
+/* Home.jsx
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 import React from 'react';
 import './Home.css';
 import profilePic from '../../src/assets/images/History.png';

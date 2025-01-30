@@ -1,6 +1,10 @@
+/* Project.jsx
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 import React, { useState } from 'react';
 import './Projects.css';
-import projectImage1 from '../../assets/images/promansys.png'; // Importa la imagen aquí
+import projectImage1 from '../../assets/images/promansys.png'; 
 import projectImage2 from '../../assets/images/lodgelog.png';
 import projectImage3 from '../../assets/images/ecommerce.png';
 import projectImage4 from '../../assets/images/medconnect.png';
@@ -14,7 +18,7 @@ export default function Project() {
       id: 1,
       title: 'E-commerce Website',
       description: 'An online shopping platform with user authentication, product listings, and secure payments.',
-      image: projectImage3, // Usa la imagen importada
+      image: projectImage3,
     },
     {
       id: 2,

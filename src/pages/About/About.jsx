@@ -1,3 +1,4 @@
+// About.jsx
 // Delannie Joseline Teodoro Bocanegra
 // StudentNumber : 301486294
 // Date : 29/01/2025
@@ -6,8 +7,7 @@ import React from 'react';
 import './About.css';
 import aboutImage from '../../assets/images/profilePic.png';
 import logoPDF from '../../assets/images/pdfLogo.png'
-import resumePDF from '../../CurrículumDelannieV.pdf'; // Asegúrate de que la ruta sea correcta
-
+import resumePDF from '../../CurrículumDelannieV.pdf'; 
 export default function About() {
   return (
     <div className="about-container">

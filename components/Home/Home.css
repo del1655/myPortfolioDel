@@ -1,4 +1,8 @@
 
+/* Home.css
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 
 .home-container {
   display: flex;
@@ -6,7 +10,7 @@
   align-items: center;
   padding-left: 4rem;
   padding-right: 4rem;
-  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-family: 'Poppins', sans-serif; 
 
 
 }

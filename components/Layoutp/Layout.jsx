@@ -1,3 +1,7 @@
+/* Layout.jsx
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../../src/assets/images/portfolioLogo.png';

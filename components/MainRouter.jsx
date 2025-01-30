@@ -1,3 +1,7 @@
+/* MainRouter.jsx
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home/Home'

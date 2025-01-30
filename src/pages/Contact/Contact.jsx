@@ -1,7 +1,45 @@
-import React from 'react';
+/* Contact.jsx
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate para redirigir
 import './Contact.css';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const navigate = useNavigate(); // Hook para redirigir al home
+
+  // Maneja el cambio de los inputs
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  // Maneja el envío del formulario
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Verifica si todos los campos están completos
+    if (formData.name && formData.email && formData.message) {
+      // Guarda los datos en el localStorage
+      localStorage.setItem('contactData', JSON.stringify(formData));
+
+      // Redirige al home
+      navigate('/'); // Asumiendo que el Home está en la ruta "/"
+    } else {
+      alert('Por favor, completa todos los campos.');
+    }
+  };
+
   return (
     <div className="contact-container">
       <div className="contact-wrapper">
@@ -11,20 +49,44 @@ export default function Contact() {
         </header>
 
         <section className="contact-section">
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
             </div>
 
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
             </div>
 
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
             </div>
 
             <button type="submit" className="submit-button">Send Message</button>
@@ -33,11 +95,9 @@ export default function Contact() {
           <div className="contact-details">
             <h2>Other Ways to Connect</h2>
             <p><strong>Email:</strong> dela.teodoro@outlook.com</p>
-            <p><strong>Address:</strong> Toronto , Ontario</p>
+            <p><strong>Address:</strong> Toronto, Ontario</p>
           </div>
         </section>
-
-        
       </div>
     </div>
   );

@@ -1,3 +1,7 @@
+/* Contact.css
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 .contact-container {
     background-color: #e6f2ff;
     min-height: 100vh;
@@ -5,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    font-family: 'Poppins', sans-serif; 
 
   }
   

@@ -1,46 +1,48 @@
+/* Layout.css
+Delannie Joseline Teodoro Bocanegra
+StudentNumber : 301486294
+Date : 29/01/2025 */
 .layout {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-family: 'Poppins', sans-serif; 
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centramos el contenido principal */
+  justify-content: center; 
   padding: 1.2rem 2rem;
   /* background: white;  */
   position: relative;
-  height: 70px; /* Altura un poco mayor */
-  /* box-shadow: 0px 4px 15px rgba(51, 153, 255, 0.4); Sombra azul suave} */
-}
+  height: 70px; }
 
 .logo {
-  height: 120px; /* Tamaño del logo */
-  position: absolute; /* Posicionamos el logo de forma absoluta */
-  left: 2rem; /* Lo colocamos a la izquierda */
+  height: 120px; 
+  position: absolute; 
+  left: 2rem; 
   top: 50%;
-  transform: translateY(-50%); /* Centramos verticalmente */
-  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7)); /* Efecto de brillo */
+  transform: translateY(-50%); 
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7)); 
 }
 
 .nav-links {
   display: flex;
-  gap: 3rem; /* Espacio entre enlaces */
+  gap: 3rem; 
   list-style: none;
-  background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  background: rgba(255, 255, 255, 0.1); 
   padding: 1rem 2.5rem;
   border-radius: 25px;
   align-items: center;
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  backdrop-filter: blur(10px); 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   font-weight: bold;
-  margin: 0 auto; /* Centramos el contenedor de enlaces */
+  margin: 0 auto; 
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #2a2823; /* Color blanco para los enlaces */
+  color: #2a2823; 
   font-size: 1rem;
   transition: all 0.3s ease;
   position: relative;
@@ -51,16 +53,16 @@
   position: absolute;
   width: 0;
   height: 2px;
-  background: #0066cc; /* Línea inferior animada */
+  background: #0066cc; 
   bottom: -5px;
   left: 0;
   transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #0066cc; /* Cambio de color al hacer hover */
+  color: #0066cc; 
 }
 
 .nav-links li a:hover::after {
-  width: 100%; /* Animación de la línea inferior */
+  width: 100%; 
 }
