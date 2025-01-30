@@ -5,13 +5,13 @@ Date: 29/01/2025 */
 .services-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   font-family: 'Poppins', sans-serif; 
 
 }
 
 .services-content {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@ Date: 29/01/2025 */
 .services-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .services-header h1 {
@@ -54,8 +54,8 @@ Date: 29/01/2025 */
 
 .service-image-container {
   flex-shrink: 0;
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -81,6 +81,7 @@ Date: 29/01/2025 */
   font-size: 1rem;
   color: #718096;
   line-height: 1.6;
+  text-align: left;
 }
 
 .service-item:hover {

@@ -5,6 +5,8 @@ Date : 29/01/2025 */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate para redirigir
 import './Contact.css';
+import ubiLogo from '../../assets/images/ubiLogo.png'
+import emailLogo from '../../assets/images/logoEmail.png'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,7 +29,7 @@ export default function Contact() {
   // Maneja el envío del formulario
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Verifica si todos los campos están completos
     if (formData.name && formData.email && formData.message) {
       // Guarda los datos en el localStorage
@@ -94,9 +96,16 @@ export default function Contact() {
 
           <div className="contact-details">
             <h2>Other Ways to Connect</h2>
-            <p><strong>Email:</strong> dela.teodoro@outlook.com</p>
-            <p><strong>Address:</strong> Toronto, Ontario</p>
+            <div className="contact-item">
+              <img src={emailLogo} alt="Email Icon" className="contact-icon" />
+              <a href="mailto:dela.teodoro@outlook.com" className="contact-link">dela.teodoro@outlook.com</a>
+            </div>
+            <div className="contact-item">
+              <img src={ubiLogo} alt="Address Icon" className="contact-icon" />
+              <p className="contact-link">Toronto, Ontario</p>
+            </div>
           </div>
+
         </section>
       </div>
     </div>

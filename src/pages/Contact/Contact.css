@@ -29,7 +29,7 @@ Date : 29/01/2025 */
   
   .contact-header h1 {
     color: #004aad;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
   }
   
@@ -93,7 +93,7 @@ Date : 29/01/2025 */
   }
   
   .contact-details {
-    text-align: center;
+    text-align: left;
   }
   
   .contact-details h2 {
@@ -119,4 +119,25 @@ Date : 29/01/2025 */
     font-size: 0.9rem;
     color: #0066cc;
   }
+ 
+  .contact-details {
+    margin-top: 20px;
+  }
   
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-icon {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px; 
+  }
+  
+  .contact-link {
+    font-size: 16px;
+    color: #333; 
+    text-decoration: none; 
+  }

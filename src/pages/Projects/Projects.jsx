@@ -8,6 +8,8 @@ import projectImage1 from '../../assets/images/promansys.png';
 import projectImage2 from '../../assets/images/lodgelog.png';
 import projectImage3 from '../../assets/images/ecommerce.png';
 import projectImage4 from '../../assets/images/medconnect.png';
+import projectImage5 from '../../assets/images/myMeds.png';
+
 
 
 export default function Project() {
@@ -37,6 +39,12 @@ export default function Project() {
       title: 'Med Connect',
       description: 'A mobile application that helps users connect with and find specialized doctors in their desired field. The app allows users to search for doctors by specialty, location, and availability, book appointments, and access virtual consultations. It also provides patient reviews, doctor profiles, and secure communication features for a seamless healthcare experience',
       image: projectImage4,
+    },
+    {
+      id: 5,
+      title: 'MyMed',
+      description: 'A web system for managing medication schedules with reminders, dose tracking, and missed-dose alerts. Simple and user-friendly.',
+      image: projectImage5,
     },
   ];
 
